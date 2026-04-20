@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="no"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ | AIGuidebook</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#f1f1f1",
+                      "primary-fixed-dim": "#acc7ff",
+                      "on-secondary-fixed": "#041b3c",
+                      "tertiary": "#722b00",
+                      "on-tertiary-container": "#ffc2a7",
+                      "secondary-container": "#bfd2fd",
+                      "on-tertiary-fixed-variant": "#7b2f00",
+                      "on-tertiary-fixed": "#351000",
+                      "on-secondary": "#ffffff",
+                      "surface": "#f9f9f9",
+                      "error": "#ba1a1a",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#e2e2e2",
+                      "secondary": "#4c5e84",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-primary-fixed": "#001a40",
+                      "primary-container": "#0056b3",
+                      "surface-tint": "#115cb9",
+                      "surface-container": "#eeeeee",
+                      "inverse-primary": "#acc7ff",
+                      "error-container": "#ffdad6",
+                      "surface-container-low": "#f3f3f3",
+                      "primary": "#003f87",
+                      "secondary-fixed": "#d7e2ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1b1b1b",
+                      "background": "#f9f9f9",
+                      "outline": "#727784",
+                      "on-surface-variant": "#424752",
+                      "surface-bright": "#f9f9f9",
+                      "surface-container-high": "#e8e8e8",
+                      "tertiary-fixed": "#ffdbcc",
+                      "tertiary-container": "#983c00",
+                      "inverse-surface": "#303030",
+                      "on-surface": "#1b1b1b",
+                      "tertiary-fixed-dim": "#ffb694",
+                      "on-primary-container": "#bbd0ff",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#c2c6d4",
+                      "on-primary-fixed-variant": "#004491",
+                      "on-secondary-fixed-variant": "#34476a",
+                      "surface-dim": "#dadada",
+                      "secondary-fixed-dim": "#b3c7f1",
+                      "primary-fixed": "#d7e2ff",
+                      "on-secondary-container": "#475a7f",
+                      "brand-orange": "#e65100", 
+                      "brand-blue": "#003f87"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .accordion-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0, 63, 135, 0.08);
+        }
+        .accordion-item:hover {
+            border-color: rgba(230, 81, 0, 0.3);
+            box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.05);
+        }
+        .list-marker {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: #003f87;
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .bullet-marker {
+            width: 8px;
+            height: 8px;
+            background-color: #e65100;
+            border-radius: 2px;
+            margin-right: 16px;
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="bg-[#f9f9f9] dark:bg-slate-950 docked full-width top-0 sticky z-50 transition-all font-['Manrope'] antialiased border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-bold tracking-tight text-[#1b1b1b] dark:text-white" href="/">AIGuidebook</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+<a class="text-[#1b1b1b] dark:text-slate-300 hover:text-brand-blue transition-colors" href="Personvern.html">Personvern</a>
+<a class="text-[#1b1b1b] dark:text-slate-300 hover:text-brand-blue transition-colors" href="Akademisk-integritet.html">Akademisk Integritet</a>
+<a class="text-brand-blue dark:text-blue-400 border-b-2 border-brand-blue pb-1" href="FAQ.html">FAQ</a>
+<a class="text-[#1b1b1b] dark:text-slate-300 hover:text-brand-blue transition-colors" href="Om-oss.html">Om oss</a>
+</div>
+<!-- Mobile Menu Icon (Visual Only) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-[#1b1b1b]">menu</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<header class="relative overflow-hidden bg-brand-blue py-24 md:py-32">
+<div class="absolute inset-0 z-0 opacity-20">
+<img alt="" class="w-full h-full object-cover mix-blend-overlay" data-alt="clean bright academic workspace with laptop open, organized desk, soft natural lighting through a window, minimal professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSurMVgWJ5KFz72XFYFVpQtJ3aG5CF0RjcoK4zkiMeEObmv4usWfC-YnKRIi6djg_Pa7WlXQbACb2luiXVcsbw_K-M0sntSNrYusjYJ4FRMeenZNt-uKmGrOkw4BwyYLE5JFZJe5KKFaOQsGmOw8LtK0lqUqO2oKytvJTz3kkZVt_LO-4OqWWGrhTsnvmtkl1WGR2KXOlrnnzEdovlmBoSkk7BRlLHR2Q1pOvjS1EcCGgy0aW-ryQhbOP-1eBUBnvnin2obZskMiBA"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8">
+<div class="max-w-3xl">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+                    Ofte stilte <span class="text-brand-orange italic">spørsmål</span>
+</h1>
+<p class="text-lg md:text-xl text-primary-fixed-dim font-light leading-relaxed mb-8 max-w-2xl">
+                    Få svar på hvordan du bruker kunstig intelligens på en ansvarlig, etisk og effektiv måte i dine studier.
+                </p>
+</div>
+</div>
+</header>
+<!-- FAQ Content Grid -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="max-w-4xl mx-auto space-y-8">
+<!-- Question 1 -->
+<div class="accordion-item bg-white rounded-xl overflow-hidden group">
+<button class="w-full flex items-center justify-between p-8 text-left focus:outline-none" id="q1">
+<span class="font-headline text-xl md:text-2xl font-extrabold flex items-center text-brand-blue group-hover:text-brand-orange transition-colors">
+<span class="w-10 h-10 flex items-center justify-center bg-brand-blue/5 rounded-lg text-brand-blue text-sm mr-6 group-hover:bg-brand-orange group-hover:text-white transition-all font-bold">01</span>
+                            Hva er akademisk integritet i forbindelse med KI?
+                        </span>
+<span class="material-symbols-outlined text-outline group-hover:text-brand-orange transition-all duration-300 transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="px-8 pb-10 pt-0">
+<div class="pl-16">
+<p class="text-on-surface-variant leading-relaxed text-lg mb-6">
+                                Akademisk integritet handler om ærlighet, tillit og ansvar i forskning og utdanning. I forbindelse med KI betyr det at du må være åpen om hvordan du har brukt verktøyene, og sikre at det du leverer er et resultat av din egen læringsprosess. 
+                            </p>
+<div class="p-6 bg-brand-blue/5 border-l-4 border-brand-blue rounded-r-lg">
+<div class="flex items-start">
+<span class="material-symbols-outlined mr-3 text-brand-blue font-bold">info</span>
+<p class="text-base font-bold text-brand-blue">
+                                        Viktig: Du kan aldri presentere KI-generert tekst som ditt eget originale arbeid.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="accordion-item bg-white rounded-xl overflow-hidden group">
+<button class="w-full flex items-center justify-between p-8 text-left focus:outline-none">
+<span class="font-headline text-xl md:text-2xl font-extrabold flex items-center text-brand-blue group-hover:text-brand-orange transition-colors">
+<span class="w-10 h-10 flex items-center justify-center bg-brand-blue/5 rounded-lg text-brand-blue text-sm mr-6 group-hover:bg-brand-orange group-hover:text-white transition-all font-bold">02</span>
+                            Er det lov å bruke ChatGPT til å skrive oppgaver?
+                        </span>
+<span class="material-symbols-outlined text-outline group-hover:text-brand-orange transition-all transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="px-8 pb-10 pt-0">
+<div class="pl-16 space-y-4">
+<div class="flex items-start">
+<div class="bullet-marker"></div>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                    Hovedregelen er at oppgaver du leverer skal være skrevet av deg selv. Å la ChatGPT skrive hele eller store deler av en besvarelse regnes som <strong>fusk (plagiat)</strong>. 
+                                </p>
+</div>
+<div class="flex items-start">
+<div class="bullet-marker"></div>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                    Noen institutter tillater bruk til korrektur eller oversettelse, men sjekk alltid retningslinjene for ditt spesifikke emne før du begynner.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="accordion-item bg-white rounded-xl overflow-hidden group">
+<button class="w-full flex items-center justify-between p-8 text-left focus:outline-none">
+<span class="font-headline text-xl md:text-2xl font-extrabold flex items-center text-brand-blue group-hover:text-brand-orange transition-colors">
+<span class="w-10 h-10 flex items-center justify-center bg-brand-blue/5 rounded-lg text-brand-blue text-sm mr-6 group-hover:bg-brand-orange group-hover:text-white transition-all font-bold">03</span>
+                            Hvordan siterer jeg KI-verktøy korrekt?
+                        </span>
+<span class="material-symbols-outlined text-outline group-hover:text-brand-orange transition-all transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="px-8 pb-10 pt-0">
+<div class="pl-16">
+<p class="text-on-surface-variant leading-relaxed text-lg mb-6">
+                                Siden KI ikke er en forfatter i tradisjonell forstand, men en modell, siteres den ofte som personlig kommunikasjon eller programvare avhengig av stilen (APA, Harvard, etc.).
+                            </p>
+<div class="bg-brand-blue text-white p-8 rounded-xl font-mono text-sm relative">
+<div class="absolute top-0 right-0 p-3 opacity-20">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<p class="text-brand-orange font-bold mb-3 uppercase tracking-widest text-xs">Eksempel (APA 7th)</p>
+<p class="leading-relaxed border-l-2 border-brand-orange/30 pl-4">OpenAI. (2024). ChatGPT (Versjon GPT-4) [Større språkmodell]. https://chat.openai.com</p>
+</div>
+<p class="mt-6 flex items-center text-sm font-medium text-on-surface-variant italic">
+<span class="material-symbols-outlined mr-2 text-brand-orange">lightbulb</span>
+                                Husk å beskrive nøyaktig hvilke ledetekster (prompts) du har brukt i et vedlegg.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Question 5 (now 04) -->
+<div class="accordion-item bg-white rounded-xl overflow-hidden group">
+<button class="w-full flex items-center justify-between p-8 text-left focus:outline-none">
+<span class="font-headline text-xl md:text-2xl font-extrabold flex items-center text-brand-blue group-hover:text-brand-orange transition-colors">
+<span class="w-10 h-10 flex items-center justify-center bg-brand-blue/5 rounded-lg text-brand-blue text-sm mr-6 group-hover:bg-brand-orange group-hover:text-white transition-all font-bold">04</span>
+                            Er mine data trygge i åpne KI-modeller?
+                        </span>
+<span class="material-symbols-outlined text-outline group-hover:text-brand-orange transition-all transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="px-8 pb-10 pt-0">
+<div class="pl-16">
+<p class="text-on-surface-variant leading-relaxed text-lg mb-8">
+                                Som hovedregel: <span class="text-error font-bold underline decoration-2 underline-offset-4">Nei</span>. Data du legger inn i gratisversjoner kan bli brukt til å trene opp fremtidige modeller.
+                            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 bg-red-50 border-t-4 border-red-600 rounded-b-xl">
+<h4 class="font-bold text-red-700 text-sm flex items-center mb-4 uppercase tracking-wider">
+<span class="material-symbols-outlined mr-2 text-xl">dangerous</span> Unngå alltid
+                                    </h4>
+<ul class="space-y-3">
+<li class="flex items-start text-sm text-red-900 font-medium">
+<span class="material-symbols-outlined text-xs mr-2 mt-0.5">close</span>
+                                            Personopplysninger
+                                        </li>
+<li class="flex items-start text-sm text-red-900 font-medium">
+<span class="material-symbols-outlined text-xs mr-2 mt-0.5">close</span>
+                                            Uoffentliggjort forskning
+                                        </li>
+<li class="flex items-start text-sm text-red-900 font-medium">
+<span class="material-symbols-outlined text-xs mr-2 mt-0.5">close</span>
+                                            Sensitiv info
+                                        </li>
+</ul>
+</div>
+<div class="p-6 bg-green-50 border-t-4 border-green-600 rounded-b-xl">
+<h4 class="font-bold text-green-700 text-sm flex items-center mb-4 uppercase tracking-wider">
+<span class="material-symbols-outlined mr-2 text-xl">check_circle</span> Trygt å bruke
+                                    </h4>
+<ul class="space-y-3">
+<li class="flex items-start text-sm text-green-900 font-medium">
+<span class="material-symbols-outlined text-xs mr-2 mt-0.5">done</span>
+                                            Generelle faglige spørsmål
+                                        </li>
+<li class="flex items-start text-sm text-green-900 font-medium">
+<span class="material-symbols-outlined text-xs mr-2 mt-0.5">done</span>
+                                            Offentlig informasjon
+                                        </li>
+<li class="flex items-start text-sm text-green-900 font-medium">
+<span class="material-symbols-outlined text-xs mr-2 mt-0.5">done</span>
+                                            Abstrakte konsepter
+                                        </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Help Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 border-t border-outline-variant/15">
+<div class="bg-brand-blue p-12 md:p-16 rounded-2xl relative overflow-hidden">
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem] leading-none select-none text-white transform rotate-12">contact_support</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-white mb-6">Fant du ikke det du lette etter?</h2>
+<p class="text-primary-fixed-dim text-lg mb-10 leading-relaxed">Vi oppdaterer denne FAQ-en kontinuerlig basert på nye retningslinjer og spørsmål fra studenter og forskere.</p>
+<a class="inline-flex items-center bg-brand-orange text-white px-10 py-4 font-bold text-base hover:bg-[#bf4400] transition-all rounded-lg shadow-lg hover:shadow-brand-orange/20" href="/om-oss">
+                    Kontakt oss <span class="material-symbols-outlined ml-2">mail</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-slate-900 w-full mt-20 border-t border-outline-variant/15 font-['Inter'] text-sm">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-16 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-2xl font-bold text-brand-blue dark:text-white mb-4">AIGuidebook</div>
+<p class="text-[#475a7f] dark:text-slate-400 max-w-xs leading-relaxed">© 2024 AIGuidebook. Akademisk ressurs for høyere utdanning og forskningsetikk.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12 md:gap-20">
+<div class="flex flex-col space-y-4">
+<span class="font-bold text-brand-blue uppercase tracking-widest text-xs">Ressurser</span>
+<a class="text-[#475a7f] dark:text-slate-400 hover:text-brand-orange transition-colors" href="#">Ressursbibliotek</a>
+<a class="text-[#475a7f] dark:text-slate-400 hover:text-brand-orange transition-colors" href="#">Brukervilkår</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-bold text-brand-blue uppercase tracking-widest text-xs">Støtte</span>
+<a class="text-[#475a7f] dark:text-slate-400 hover:text-brand-orange transition-colors" href="#">Kontakt</a>
+<a class="text-[#475a7f] dark:text-slate-400 hover:text-brand-orange transition-colors" href="#">Tilgjengelighet</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

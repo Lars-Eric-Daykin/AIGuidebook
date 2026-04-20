@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="no"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AIGuidebook - Veiledning for ansvarlig bruk av KI</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "accent-orange": "#FF9800", /* Warm vibrant orange */
+                    "accent-orange-dark": "#F57C00",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container": "#eeeeee",
+                    "secondary-fixed-dim": "#b3c7f1",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-tint": "#003f87",
+                    "secondary": "#4c5e84",
+                    "surface-container-low": "#f3f3f3",
+                    "secondary-container": "#bfd2fd",
+                    "inverse-primary": "#acc7ff",
+                    "outline-variant": "#c2c6d4",
+                    "on-primary-container": "#bbd0ff",
+                    "inverse-surface": "#303030",
+                    "on-surface": "#1b1b1b",
+                    "surface-dim": "#dadada",
+                    "on-tertiary-fixed-variant": "#7b2f00",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed-variant": "#004491",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-fixed-variant": "#34476a",
+                    "on-tertiary-container": "#ffc2a7",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-fixed": "#041b3c",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "primary": "#003f87",
+                    "outline": "#727784",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#d7e2ff",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#983c00",
+                    "on-background": "#1b1b1b",
+                    "on-surface-variant": "#424752",
+                    "tertiary-fixed-dim": "#ffb694",
+                    "on-primary-fixed": "#001a40",
+                    "inverse-on-surface": "#f1f1f1",
+                    "background": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#acc7ff",
+                    "surface-bright": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#475a7f",
+                    "primary-container": "#0056b3",
+                    "tertiary": "#722b00",
+                    "surface": "#ffffff",
+                    "secondary-fixed": "#d7e2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1b1b1b; } 
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; } 
+        .material-symbols-outlined { vertical-align: middle; }
+    </style>
+</head>
+<body class="bg-surface selection:bg-accent-orange/30 selection:text-black text-lg">
+<!-- TopAppBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white border-b border-surface-container">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 w-full h-16">
+<div class="flex items-center">
+<a class="text-on-surface hover:text-accent-orange transition-colors duration-200 font-headline text-2xl font-black" href="#">AIGuidebook</a>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface hover:text-accent-orange transition-colors duration-200 font-headline text-sm font-bold uppercase tracking-wider" href="Personvern.html">Personvern</a>
+<a class="text-on-surface hover:text-accent-orange transition-colors duration-200 font-headline text-sm font-bold uppercase tracking-wider" href="Akademisk-Integritet.html">Akademisk Integritet</a>
+<a class="text-on-surface hover:text-accent-orange transition-colors duration-200 font-headline text-sm font-bold uppercase tracking-wider" href="FAQ.html">FAQ</a>
+<a class="text-on-surface hover:text-accent-orange transition-colors duration-200 font-headline text-sm font-bold uppercase tracking-wider" href="Om-Oss.html">Om oss</a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-primary leading-[1.1] mb-8 font-headline">
+                Veiledning for <span class="text-on-surface">ansvarlig bruk</span> av KI i studiene
+            </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10">
+                Oppdag hvordan du kan utnytte kunstig intelligens som en kraftfull medspiller i din akademiske hverdag, uten å gå på bekostning av integritet og personvern.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="inline-block bg-accent-orange text-white px-8 py-4 rounded-sm font-bold hover:bg-accent-orange-dark transition-all active:scale-95 shadow-sm" href="#">
+                    Kom i gang
+                </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-white rounded-sm overflow-hidden border border-outline-variant/30 shadow-sm">
+<img alt="Universitetsstudenter som samarbeider i et bibliotek" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwYValLeq25pdVsq1h6XfKQ-md5olLX03wEpU6ywpeaxsZfCISkm5EBzUdUIecsKNTfHScaKOmgERH6Ok27WJnhR2KEdAx1Ylse6YAQcnYgpc9zvvcEcs_btMtaZO_DooryEWxkbITXUV8t9Vdb_Cb5dx-Leq_DJ2-LlS-O-iWcyYhYb9HrMlD06v54ceMEiU72BSG45wz0ZT2Alsn5j9onSH5od7Vf8N9BtaxfMfcrcOdasfvj8UbK7DgW7-TSMikofjooBzDDTuf"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-surface-container-highest max-w-[240px]">
+<p class="text-sm font-bold text-on-surface leading-tight">Akademisk kuratert innhold for norske studenter.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- KI som støtte: 6-boks grid -->
+<section class="bg-surface-container-low py-24 mb-32">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<span class="text-sm font-bold tracking-widest text-accent-orange uppercase">Støtteverktøy</span>
+<h2 class="text-3xl md:text-4xl font-bold mt-4 font-headline text-on-surface">Hvordan KI kan støtte deg</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1. Diskusjonspartner -->
+<div class="bg-white p-8 border border-surface-container hover:border-accent-orange/30 transition-colors">
+<span class="material-symbols-outlined text-accent-orange text-3xl mb-4" data-icon="forum">forum</span>
+<h3 class="text-xl font-bold mb-3 font-headline">1. Diskusjonspartner</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Bruk KI til å utforske ideer, teste argumenter og få nye perspektiver på dine faglige problemstillinger.</p>
+</div>
+<!-- 2. Strukturere tekst -->
+<div class="bg-white p-8 border border-surface-container hover:border-accent-orange/30 transition-colors">
+<span class="material-symbols-outlined text-accent-orange text-3xl mb-4" data-icon="account_tree">account_tree</span>
+<h3 class="text-xl font-bold mb-3 font-headline">2. Strukturere tekst</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Få hjelp til å lage disposisjoner og organisere innholdet ditt logisk før du starter selve skrivingen.</p>
+</div>
+<!-- 3. Litteraturgjennomgang -->
+<div class="bg-white p-8 border border-surface-container hover:border-accent-orange/30 transition-colors">
+<span class="material-symbols-outlined text-accent-orange text-3xl mb-4" data-icon="find_in_page">find_in_page</span>
+<h3 class="text-xl font-bold mb-3 font-headline">3. Litteraturgjennomgang</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Bruk verktøy til å raskt identifisere relevante temaer i store mengder tekst og forskningsartikler.</p>
+</div>
+<!-- 4. Arbeid med litteratur -->
+<div class="bg-white p-8 border border-surface-container hover:border-accent-orange/30 transition-colors">
+<span class="material-symbols-outlined text-accent-orange text-3xl mb-4" data-icon="menu_book">menu_book</span>
+<h3 class="text-xl font-bold mb-3 font-headline">4. Arbeid med litteratur</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Få oppsummert komplekse teorier eller be om forklaringer på vanskelige begreper i pensum.</p>
+</div>
+<!-- 5. Språkvask og korrekturlesing -->
+<div class="bg-white p-8 border border-surface-container hover:border-accent-orange/30 transition-colors">
+<span class="material-symbols-outlined text-accent-orange text-3xl mb-4" data-icon="spellcheck">spellcheck</span>
+<h3 class="text-xl font-bold mb-3 font-headline">5. Språkvask og korrektur</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Forbedre flyten og rett opp grammatiske feil for å sikre at budskapet ditt kommer tydelig frem.</p>
+</div>
+<!-- 6. Oversettelse -->
+<div class="bg-white p-8 border border-surface-container hover:border-accent-orange/30 transition-colors">
+<span class="material-symbols-outlined text-accent-orange text-3xl mb-4" data-icon="translate">translate</span>
+<h3 class="text-xl font-bold mb-3 font-headline">6. Oversettelse</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Oversett kildemateriale eller egne utkast mellom språk med høy presisjon og bevart kontekst.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Praktiske tips for daglig bruk -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="mb-16 text-center">
+<h2 class="text-3xl md:text-5xl font-bold mb-6 font-headline text-primary">Praktiske tips for daglig bruk</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Enkle grep som gjør din interaksjon med KI-verktøy sikrere og mer effektiv.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center font-bold text-xl">1</div>
+<h3 class="text-xl font-bold font-headline">Organiser samtalene</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Gi hver samtale en tydelig tittel og hold deg til ett tema per chat. Dette hjelper modellen å holde fokus og gjør det lettere for deg å finne tilbake til viktig informasjon senere.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center font-bold text-xl">2</div>
+<h3 class="text-xl font-bold font-headline">Bruk filopplasting aktivt</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Last opp dine egne notater eller pensumtekster (husk personvern!) for å gi KI-en spesifikk kontekst. Dette reduserer faren for generelle og irrelevante svar.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center font-bold text-xl">3</div>
+<h3 class="text-xl font-bold font-headline">Ikke anta at svaret er riktig</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Vær alltid kildekritisk. KI kan "hallusinere" fakta. Dobbeltsjekk viktige opplysninger, datoer og referanser mot troverdige akademiske kilder før du bruker dem.
+            </p>
+</div>
+</div>
+</section>
+<!-- Core Topics (Restyled for WCAG AA Consistency) -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="text-center mb-20">
+<h2 class="text-3xl md:text-5xl font-bold mb-6 font-headline text-primary">Kjerneområder for refleksjon</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange/10 transition-all">
+<span class="material-symbols-outlined text-accent-orange text-3xl" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<h4 class="text-xl font-bold mb-3 font-headline">Personvern</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Aldri last opp sensitive data eller personopplysninger til offentlige KI-modeller.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange/10 transition-all">
+<span class="material-symbols-outlined text-accent-orange text-3xl" data-icon="visibility_off" style="font-variation-settings: 'FILL' 1;">visibility_off</span>
+</div>
+<h4 class="text-xl font-bold mb-3 font-headline">Bias</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Vær bevisst på at modeller kan gjenspeile kulturelle og sosiale fordommer.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange/10 transition-all">
+<span class="material-symbols-outlined text-accent-orange text-3xl" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<h4 class="text-xl font-bold mb-3 font-headline">Hallusinasjoner</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">KI kan presentere usannheter med stor selvsikkerhet. Faktasjekk alltid.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange/10 transition-all">
+<span class="material-symbols-outlined text-accent-orange text-3xl" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<h4 class="text-xl font-bold mb-3 font-headline">Integritet</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Bruk verktøyene som støtte for din egen læring, ikke som erstatning.</p>
+</div>
+</div>
+</section>
+<!-- Checklist Section -->
+<section class="max-w-5xl mx-auto px-6 mb-32">
+<div class="bg-white p-8 md:p-16 border border-surface-container-highest shadow-sm">
+<h2 class="text-3xl font-bold mb-10 flex items-center gap-4 font-headline text-on-surface">
+<span class="material-symbols-outlined text-accent-orange text-4xl" data-icon="fact_check">fact_check</span>
+            Sjekkliste for ansvarlig KI-bruk
+        </h2>
+<div class="space-y-6">
+<label class="flex items-start gap-4 p-5 bg-surface-container-low rounded-sm cursor-pointer hover:bg-surface-container transition-colors group">
+<input class="mt-1 w-6 h-6 rounded-none border-outline text-accent-orange focus:ring-accent-orange" type="checkbox"/>
+<div>
+<span class="text-lg font-bold block text-on-surface">Har jeg sjekket kildene?</span>
+<span class="text-sm text-on-surface-variant">Bekreft at referanser faktisk eksisterer i den virkelige verden.</span>
+</div>
+</label>
+<label class="flex items-start gap-4 p-5 bg-surface-container-low rounded-sm cursor-pointer hover:bg-surface-container transition-colors group">
+<input class="mt-1 w-6 h-6 rounded-none border-outline text-accent-orange focus:ring-accent-orange" type="checkbox"/>
+<div>
+<span class="text-lg font-bold block text-on-surface">Beskytter jeg personvernet?</span>
+<span class="text-sm text-on-surface-variant">Ingen personopplysninger er inkludert i prompten.</span>
+</div>
+</label>
+<label class="flex items-start gap-4 p-5 bg-surface-container-low rounded-sm cursor-pointer hover:bg-surface-container transition-colors group">
+<input class="mt-1 w-6 h-6 rounded-none border-outline text-accent-orange focus:ring-accent-orange" type="checkbox"/>
+<div>
+<span class="text-lg font-bold block text-on-surface">Følger jeg emnebeskrivelsen?</span>
+<span class="text-sm text-on-surface-variant">Sjekk om ditt emne har egne regler for bruk av KI.</span>
+</div>
+</label>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-12 px-6 mt-20 bg-white border-t border-surface-container">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<p class="text-lg font-extrabold text-primary mb-2">AIGuidebook</p>
+<p class="text-slate-500 text-sm">© 2024 AIGuidebook. Utviklet for norsk akademia.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+<a class="text-slate-500 hover:text-accent-orange transition-colors text-sm font-semibold font-headline" href="#">Personvern</a>
+<a class="text-slate-500 hover:text-accent-orange transition-colors text-sm font-semibold font-headline" href="#">Kontakt oss</a>
+<a class="text-slate-500 hover:text-accent-orange transition-colors text-sm font-semibold font-headline" href="#">Ressurser</a>
+</div>
+</div>
+</footer>
+</body></html>

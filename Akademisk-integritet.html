@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="no"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Akademisk Integritet | AIGuidebook</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#e8e8e8",
+                      "error": "#ba1a1a",
+                      "primary-container": "#0056b3",
+                      "surface-container": "#eeeeee",
+                      "secondary": "#4c5e84",
+                      "inverse-primary": "#acc7ff",
+                      "surface-container-low": "#f3f3f3",
+                      "surface-variant": "#e2e2e2",
+                      "on-surface": "#1b1b1b",
+                      "surface-container-highest": "#e2e2e2",
+                      "secondary-container": "#bfd2fd",
+                      "on-background": "#1b1b1b",
+                      "primary": "#003f87",
+                      "on-tertiary-fixed": "#351000",
+                      "on-primary": "#ffffff",
+                      "background": "#f9f9f9",
+                      "tertiary": "#722b00",
+                      "on-tertiary-fixed-variant": "#7b2f00",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#475a7f",
+                      "inverse-on-surface": "#f1f1f1",
+                      "surface-bright": "#f9f9f9",
+                      "tertiary-container": "#983c00",
+                      "secondary-fixed-dim": "#b3c7f1",
+                      "surface-dim": "#dadada",
+                      "on-surface-variant": "#424752",
+                      "surface-tint": "#115cb9",
+                      "on-tertiary-container": "#ffc2a7",
+                      "on-error-container": "#93000a",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#041b3c",
+                      "secondary-fixed": "#d7e2ff",
+                      "surface": "#f9f9f9",
+                      "outline": "#727784",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb694",
+                      "on-secondary-fixed-variant": "#34476a",
+                      "on-primary-container": "#bbd0ff",
+                      "primary-fixed-dim": "#acc7ff",
+                      "outline-variant": "#c2c6d4",
+                      "on-primary-fixed-variant": "#004491",
+                      "inverse-surface": "#303030",
+                      "primary-fixed": "#d7e2ff",
+                      "on-primary-fixed": "#001a40"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .academic-glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .orange-callout { border-left: 4px solid #ea580c; }
+        
+        .flip-card {
+            background-color: transparent;
+            perspective: 1000px;
+            cursor: pointer;
+            height: 280px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+        .flip-card.is-flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface leading-relaxed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-lg">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-stone-900 dark:text-stone-50 font-headline">AIGuidebook</div>
+<nav class="hidden md:flex gap-8 items-center font-['Manrope'] text-sm tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" href="Personvern.html">Personvern</a>
+<a class="text-orange-600 dark:text-orange-400 font-semibold border-b-2 border-orange-600" href="Akademisk-integritet.html">Akademisk Integritet</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" href="FAQ.html">FAQ</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" href="Om-oss.html">Om oss</a>
+</nav>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="bg-stone-100 dark:bg-stone-900 h-[1px] w-full"></div>
+</header>
+<main class="pt-24">
+<!-- Hero Section: Asymmetric Editorial Layout -->
+<section class="max-w-7xl mx-auto px-8 py-16 md:py-24 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<span class="text-orange-600 font-semibold tracking-widest uppercase text-xs mb-4 block">Veiledning for studenter</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                    KI som din akademiske medspiller – <span class="text-primary-container">ikke din erstatter.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10">
+                    Akademisk integritet handler om ærlighet, tillit og eierskap til din egen læringsprosess. Lær hvordan du bruker generativ KI som et kraftfullt stillas uten å miste din egen stemme.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 font-semibold text-sm hover:bg-primary transition-all">Les retningslinjene</button>
+<button class="bg-surface-container-high text-primary px-8 py-4 font-semibold text-sm hover:opacity-90 transition-all">Se eksempler</button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-lg">
+<img alt="Minimalist desktop with a high-end laptop and an open leather-bound academic journal under soft natural morning light" class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbhTfYVY0ftjMry3sUNaXaf8CvAdn132_-d_7-CYTu85p9b-Pj-Myai9kpOKWi46iehNEDSwcK9mZb1ixmo-1I2vGKZG0KVaHeeBGF_7NSZi74GJy9QGI2kz1faAWVnxWCMkRhTxMu7TcrLd-651WPbQSu1Y4pbGek3a_kyQSoqf3pEp9Pz_b24WBmiTJwfwhLkkU1fs8HHoo6WEYeI_yUs_jbqysReS4P6QOuz9rRn6eeiX2eJ_0sABOfH_-BxVjSbaz2kZCmUGxn"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-orange-600 text-white p-8 max-w-[240px] hidden md:block">
+<p class="text-sm italic font-medium">"Integritet er å gjøre det rette, selv når ingen ser på."</p>
+</div>
+</div>
+</section>
+<!-- Article Content Section -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-lowest p-12 md:p-20">
+<article class="prose prose-stone prose-lg max-w-none">
+<h2 class="font-headline text-3xl font-bold mb-8">Refleksjon og Integritet i KI-alderen</h2>
+<p class="mb-6 text-on-surface-variant">
+                            I dagens akademiske landskap er verktøy som ChatGPT og andre språkmodeller lett tilgjengelige. Men husk: Målet med utdanning er ikke bare å produsere en tekst, men å utvikle evnen til å tenke kritisk, analysere og syntetisere informasjon.
+                        </p>
+<div class="orange-callout bg-orange-50 p-8 my-10">
+<h3 class="text-orange-900 font-bold text-xl mb-3">KI som 'stillas'</h3>
+<p class="text-orange-800 leading-relaxed">
+                                Se på KI som et midlertidig stillas under byggingen av et hus. Stillaset hjelper deg å nå høyere og jobbe mer effektivt, men det er ikke en del av det ferdige bygget. Når oppgaven leveres, skal det være din egen intellektuelle arkitektur som står igjen.
+                            </p>
+</div>
+<p class="mb-6">
+                            Ukritisk bruk av KI-generert tekst er ikke bare et brudd på akademiske regler; det er et svik mot din egen læring. Ved å la en maskin formulere dine argumenter, går du glipp av den kognitive prosessen som kreves for å virkelig forstå et emne.
+                        </p>
+<h3 class="font-headline text-2xl font-bold mt-12 mb-6">Ditt ansvar for eget arbeid</h3>
+<p>
+                            Uansett hvilke verktøy du bruker, bærer du det fulle ansvaret for alt innhold i dine innleveringer. Dette inkluderer faktiske feil (hallusinering), manglende kildehenvisninger og plagiat som KI-en måtte ha generert. Du er redaktøren; KI-en er kun en assistent.
+                        </p>
+</article>
+</div>
+</div>
+</section>
+<!-- Checklist: Interactive Quiz Cards -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="mb-16 text-center">
+<h2 class="font-headline text-4xl font-bold mb-4">Sjekkliste for integritet</h2>
+<p class="text-on-surface-variant">Før du leverer, gå gjennom disse punktene for å sikre at arbeidet er ditt eget.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+<div class="flip-card-inner">
+<div class="flip-card-front bg-surface-container-lowest border-b-4 border-orange-500 shadow-sm">
+<span class="material-symbols-outlined text-orange-600 mb-6 text-4xl" data-icon="fact_check">fact_check</span>
+<h4 class="font-headline text-xl font-bold mb-4">Kildekritikk</h4>
+<div class="mt-auto flex items-center text-xs font-bold text-orange-600 uppercase tracking-widest">
+<span>Klikk for å sjekke</span>
+<span class="material-symbols-outlined ml-2 text-sm">touch_app</span>
+</div>
+</div>
+<div class="flip-card-back bg-orange-50 border-b-4 border-orange-500 shadow-sm">
+<h4 class="font-headline text-sm font-bold text-orange-900 mb-4 uppercase tracking-wider">Spørsmål:</h4>
+<p class="text-base text-on-surface leading-relaxed">
+                                Har du verifisert alle påstander og kilder oppgitt av KI-en i uavhengige, troverdige kilder?
+                            </p>
+<div class="mt-auto text-xs text-orange-800 italic">
+                                Husk: KI kan ofte dikte opp kilder som ser ekte ut.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+<div class="flip-card-inner">
+<div class="flip-card-front bg-surface-container-lowest border-b-4 border-primary-container shadow-sm">
+<span class="material-symbols-outlined text-primary-container mb-6 text-4xl" data-icon="edit_note">edit_note</span>
+<h4 class="font-headline text-xl font-bold mb-4">Egen stemme</h4>
+<div class="mt-auto flex items-center text-xs font-bold text-primary-container uppercase tracking-widest">
+<span>Klikk for å sjekke</span>
+<span class="material-symbols-outlined ml-2 text-sm">touch_app</span>
+</div>
+</div>
+<div class="flip-card-back bg-blue-50 border-b-4 border-primary-container shadow-sm">
+<h4 class="font-headline text-sm font-bold text-primary-container mb-4 uppercase tracking-wider">Spørsmål:</h4>
+<p class="text-base text-on-surface leading-relaxed">
+                                Er språket og argumentasjonen din egen, eller er det gjenkjennbare mønstre fra maskingenerert tekst?
+                            </p>
+<div class="mt-auto text-xs text-primary-container italic">
+                                Din personlige innsikt er det som gir teksten verdi.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flip-card" onclick="this.classList.toggle('is-flipped')">
+<div class="flip-card-inner">
+<div class="flip-card-front bg-surface-container-lowest border-b-4 border-secondary shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-6 text-4xl" data-icon="history_edu">history_edu</span>
+<h4 class="font-headline text-xl font-bold mb-4">Gjennomsiktighet</h4>
+<div class="mt-auto flex items-center text-xs font-bold text-secondary uppercase tracking-widest">
+<span>Klikk for å sjekke</span>
+<span class="material-symbols-outlined ml-2 text-sm">touch_app</span>
+</div>
+</div>
+<div class="flip-card-back bg-slate-100 border-b-4 border-secondary shadow-sm">
+<h4 class="font-headline text-sm font-bold text-secondary mb-4 uppercase tracking-wider">Spørsmål:</h4>
+<p class="text-base text-on-surface leading-relaxed">
+                                Har du redegjort for hvordan og i hvilken grad du har benyttet KI-verktøy i prosessen?
+                            </p>
+<div class="mt-auto text-xs text-secondary italic">
+                                Åpenhet om prosessen styrker din faglige integritet.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-900 w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-stone-900 dark:text-stone-100">AIGuidebook</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-xs uppercase tracking-widest text-stone-500">
+<a class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Kontakt oss</a>
+<a class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Ressurser</a>
+<a class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Vilkår</a>
+<a class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors" href="#">Tilgjengelighetserklæring</a>
+</div>
+<div class="font-['Inter'] text-xs uppercase tracking-widest text-stone-500">
+                © 2024 AIGuidebook. Utviklet for akademisk integritet.
+            </div>
+</div>
+</footer>
+</body></html>
+
